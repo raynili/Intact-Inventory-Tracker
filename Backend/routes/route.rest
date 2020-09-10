@@ -1,0 +1,43 @@
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/5f458a03a55e4d1d268f9953
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" : "asdf",
+    "quantity" : 3
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" : "705",
+    "quantity" : 50
+}
+
+###
+DELETE http://localhost:3000/products/5f57ef6d3370052348cfa51a
+
+###
+PATCH http://localhost:3000/products/5f4583ce076a671c13a58dc3
+Content-Type: application/json 
+
+{
+    "quantity" : 25
+}
+
+###
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" : "710",
+    "quantity" : 10
+}
